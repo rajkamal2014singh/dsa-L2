@@ -27,6 +27,7 @@ import java.util.Scanner;
  *  20 -> 7
  *  25 -> 9
  *
+ * time complexity is O(square_root(x))
  */
 public class MinJumpsWithMoves {
 
