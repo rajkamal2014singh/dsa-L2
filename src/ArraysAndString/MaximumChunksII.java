@@ -12,7 +12,7 @@ import java.util.Scanner;
  * [30 10 20 40 60 50 75 70] -> 4
  * [30 10 40 20 60 50 75 70] -> 3
  *
- * here maintain two arrray with left max and right min and where ever left max is less than index+1 right min then
+ * here maintain two array with left max and right min and where ever left max is less than index+1 right min then
  * increase the chunk count as that implies we have one chunk
  *
  * we can do with one array right min and left max variable
