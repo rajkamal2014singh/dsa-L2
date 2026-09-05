@@ -48,6 +48,9 @@ public class ThreeSumTriplet {
     public static List<List<Integer>> targetSumTriplet(int[] arr, int tar){
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(arr);
+        if(arr.length < 3){
+            return ans;
+        }
         for(int i=0; i<=arr.length - 3; i++){
             if(i!=0 && arr[i] == arr[i-1]){
                 continue;

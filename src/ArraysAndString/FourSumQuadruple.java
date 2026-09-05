@@ -62,6 +62,10 @@ public class FourSumQuadruple {
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(arr);
 
+        if(arr.length < 4){
+            return ans;
+        }
+
         for(int i=0; i<=arr.length - 4; i++){
             if(i!=0 && arr[i] == arr[i-1]){
                 continue;
