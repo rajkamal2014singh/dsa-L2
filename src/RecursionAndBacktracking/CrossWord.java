@@ -1,7 +1,16 @@
 package RecursionAndBacktracking;
 
 import java.util.Scanner;
-/*
+/**
+ * Given a crossword pattern/matrix and array of words print all the possible combinations
+ * which solves the cross world puzzle.
+ *
+ * For every string in words array check if the string can be placed
+ * horizontally but the word in the puzzle and mode to next string
+ * while returning unplace the word
+ * do same thing if it is possible to place word vertically
+ *
+ *
 10
 + - + + + + + + + +
 + - + + + + + + + +

@@ -3,6 +3,20 @@ package RecursionAndBacktracking;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ *
+ * Given a gold mine represented in the form of matrix
+ * Here 0 represents blockage
+ * Any other value non-zero represents how much gold can be collected at the point
+ * Need to find max gold that can be mined
+ *
+ * Approach
+ * Feels Similar as No of island and flood fill traversal where we store the value of index
+ * Traverse the matrix get the valid values in a array list
+ * calculate the sum and store the maxSum we got
+ *
+ *
+ */
 public class GoldMineII {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);

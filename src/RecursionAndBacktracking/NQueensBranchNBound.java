@@ -2,6 +2,19 @@ package RecursionAndBacktracking;
 
 import java.util.Scanner;
 
+/**
+ *
+ * Solve n queen problem using branch and bound approach.
+ *
+ * Approach
+ * Here we will not use visited boolean array we will create arrays that tells us weather we can
+ * put queen at this index or not
+ * 3 arrays
+ *  - cols(n) tells if queen can be placed at this column or not
+ *  - dig(2*n - 1) tells if current position is valid or not for queen in respect to diagonal (row + col)
+ *  - rdig(2*n - 1) tells if current position is valid or not for queen in respect to reverse diagonal (row - col + n - 1)
+ *
+ */
 public class NQueensBranchNBound {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);

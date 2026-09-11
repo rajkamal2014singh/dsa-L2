@@ -2,6 +2,17 @@ package RecursionAndBacktracking;
 
 import java.util.Scanner;
 /**
+ * Given a matrix 9*9 with pre-existing value but at zero we need to replace it with value(1-9) to
+ * Rules
+ * 1. 1-9 exactly once each row.
+ * 2. 1-9 exactly once each column.
+ * 3. 1-9 exactly once in each 3*3 sub-array of given 9*9 2d array
+ *
+ * solve the sudoku
+ * keep in mind all the conditions of sudoku to be followed
+ * Print all the possible combinations
+ *
+ *
 3 0 6 5 0 8 4 0 0
 5 2 0 0 0 0 0 0 0
 0 8 7 0 0 0 0 3 1

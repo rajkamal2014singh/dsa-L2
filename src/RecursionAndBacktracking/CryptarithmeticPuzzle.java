@@ -3,7 +3,30 @@ package RecursionAndBacktracking;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class CryparithmeticPuzzle {
+/**
+ *
+ * Given three string s1, s2 and s3
+ * first two are supposed to add and form third string, s1 + s2 = s3
+ * need to map each individual character to a digit(0-9) so that above equation is true.
+ *
+ * len(s1 + s2) <= 10
+ * one character can map to max one digit and vice versa.
+ *
+ * Example
+ * s1 -> send, s2 -> more, s3 -> money
+ * one of the solution -> d-7, e-5, m-1, n-6, o-0, r-8, s-9, y-2
+ *
+ *
+ * Approach
+ * Create a string which contains all the unique characters and a boolean array of length 10
+ * boolean array tells which all digits are used till now
+ * For character at every index loop over digits and work on unused nums mark it as used and move to next index of string
+ * when index becomes length of unique character string calculate the value of string and
+ * check for our condition
+ * while returning mark used digit as false
+ *
+ */
+public class CryptarithmeticPuzzle {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
 
